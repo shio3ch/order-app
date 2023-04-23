@@ -33,3 +33,9 @@ pnpm run front start
 ```sh
 pnpm run back start
 ```
+
+### Run for Postgres
+
+```sh
+docker-compose up -d
+```

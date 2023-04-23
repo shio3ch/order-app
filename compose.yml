@@ -1,0 +1,18 @@
+services:
+  db:
+    container_name: order-app-db
+    image: postgres:15
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: orderapp
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --locale=C"
+    volumes:
+      - type: volume
+        source: db-data
+        target: /var/lib/postgresql/data
+
+volumes:
+  db-data:
