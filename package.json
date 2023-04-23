@@ -11,6 +11,8 @@
   "scripts": {
     "compile": "tsc -b tsconfig.build.json",
     "prepare": "pnpm run compile",
+    "front": "pnpm -F \"frontend\"",
+    "back": "pnpm -F \"backend\"",
     "start:back": "cd packages/backend && pnpm run start",
     "start:front": "cd packages/frontend && pnpm run start"
   }

@@ -25,11 +25,11 @@ pnpm install
 ### Run for Frontend
 
 ```sh
-pnpm run start:front
+pnpm run front start
 ```
 
 ### Run for Backend
 
 ```sh
-pnpm run start:back
+pnpm run back start
 ```
