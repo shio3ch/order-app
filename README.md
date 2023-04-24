@@ -4,7 +4,7 @@
 
 ### Frontend
 
-* Next.js
+* Nuxt.js
 
 ### Backend
 
