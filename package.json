@@ -11,17 +11,23 @@
   "scripts": {
     "compile": "tsc -b tsconfig.build.json",
     "prepare": "pnpm run compile",
-    "front": "pnpm -F \"frontend\"",
-    "back": "pnpm -F \"backend\"",
-    "start:back": "cd packages/backend && pnpm run start",
-    "start:front": "cd packages/frontend && pnpm run dev"
+    "front": "pnpm -F \"@order-app/frontend\"",
+    "back": "pnpm -F \"@order-app/backend\"",
+    "start:back": "pnpm front start",
+    "start:front": "pnpm front dev",
+    "db:init": "pnpm back db:init",
+    "db:seed": "pnpm back db:seed",
+    "db:reset": "pnpm back db:reset",
+    "db:push": "pnpm back db:push",
+    "db:pull": "pnpm back db:pull",
+    "db:watch": "pnpm back db:watch"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.3.2"
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
   }
 }
