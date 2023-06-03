@@ -4,20 +4,20 @@
 
 ### Frontend
 
-* Nuxt.js
+- Nuxt.js
 
 ### Backend
 
-* Nest.js
+- Nest.js
 
 ### DB
 
-* Postgres
+- Postgres
 
 ## Installation
 
 ```sh
-pnpm install
+pnpm install --shamefully-hoist
 ```
 
 ## Scripts

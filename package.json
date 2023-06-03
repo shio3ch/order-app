@@ -15,6 +15,7 @@
     "back": "pnpm -F \"@order-app/backend\"",
     "start:back": "pnpm front start",
     "start:front": "pnpm front dev",
+    "prisma:generate": "pnpm back exec prisma generate",
     "db:init": "pnpm back db:init",
     "db:seed": "pnpm back db:seed",
     "db:reset": "pnpm back db:reset",
@@ -28,6 +29,7 @@
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.5"
   }
 }
